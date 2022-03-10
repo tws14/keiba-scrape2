@@ -3,6 +3,8 @@ package racedata;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.apache.commons.lang3.math.NumberUtils;
+
 public class LapCalc {
 		
 	public ArrayList<String> lapcalc (String race, String lapt) {
@@ -24,7 +26,7 @@ public class LapCalc {
 	if (laptime2 != null && leng > 0) {
 		//ダブル型の配列に変換
 		for ( int i = 0; i < leng; i++) {
-			lapt2[i] = Double.parseDouble(laptime2[i]);
+			lapt2[i] = NumberUtils.toDouble(laptime2[i], 0);
 			
 		}
 		

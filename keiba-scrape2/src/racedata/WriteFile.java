@@ -13,7 +13,7 @@ public class WriteFile {
 	
 	try {
 		//書き込み用ファイル作成（任意のパス)
-		String fp = "/home/use/ドキュメント/lapdata.csv";
+		String fp = "/home/user/ドキュメント/lapdata.csv";
 		File file = new File(fp);
 		
 		bw = new BufferedWriter(new FileWriter(file, true));

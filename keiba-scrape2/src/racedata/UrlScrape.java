@@ -21,7 +21,7 @@ public class UrlScrape {
 		
 				for(Element element : elements) {
 						urls.add("https://db.netkeiba.com/" + element.attr("href"));
-						if(urls.size() == 5) {
+						if(urls.size() == 10) {
 							break;
 						}
 				}
